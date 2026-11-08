@@ -1,0 +1,127 @@
+/* Configuracion General */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background-color: #f1f4f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263746;
+}
+
+/*TARJETA PRINCIPAL */
+
+.tarjeta{
+    width: 100%;
+    max-width: 560px;
+    padding: 36px 32px;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(30, 55, 75, 0.12);
+}
+
+/*Titulo*/
+
+h1{
+    margin-bottom: 12px;
+    font-size: 28px;
+    color: #263746 ;
+}
+
+/*Descripcion*/
+
+.descripcion{
+    margin-bottom: 22px;
+    color: #667684;
+    line-height: 1.5;
+}
+
+/*Numero de contador*/
+
+.contador{
+    margin: 12px 0 22px;
+    color: #2585bd;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+/*Boton*/
+
+button{
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    background-color: #20ad91;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(32, 173, 145, 0.22);
+    transition: 0.2s;
+}
+/*Efecto al pasar el mouse*/
+
+button:hover{
+    background-color: #168e77;
+    transform:translateY(-2px);
+}
+
+/*Tabla*/
+
+.tabla-contenedor{
+    margin-top: 28px;
+    overflow-x: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*Celdad y encabezados */
+
+th, td { 
+    padding: 13px 16px;
+    border-bottom: 1px solid #e8edf1;
+    text-align: center;
+}
+
+/*Encabezados*/
+th{
+    color: #526575;
+    background-color: #f8fafb;
+}
+
+/*Efecto de filas*/
+
+tbody tr:hover{
+    background-color: #f5fbfa;
+}
+
+/*Mensaje Inicial*/
+
+.mensaje-vacio{
+    margin-top: 14px;
+    color: #8996a1;
+    font-size: 14px;
+}
+
+/*Adaptacion para celulares*/ 
+
+@media (max-width: 480px){
+    .tarjeta{
+        padding: 28px 18px;
+    }
+    h1{
+        font-size: 23px;
+    }
+}

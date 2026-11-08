@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WEB MOVIL SANTIAGO BUITRAGO</title>
+
+    <!-- CONECTAR CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- CONECTAR JAVASCRIPT -->
+    <script src="scripts.js" defer></script>
+
+</head>
+<body>
+
+    <main class="tarjeta">
+
+        <h1>Interactividad con el DOM</h1>
+
+        <p class="descripcion">
+            Haz clic en el botón para incrementar el contador
+            y registrar la hora exacta del evento en la tabla.
+        </p>
+
+        <!-- CONTADOR -->
+        <p id="contador" class="contador">0</p>
+
+        <!-- BOTÓN INTERACTIVO -->
+        <button id="btn-like">
+            ¡HAZ CLIC AQUÍ!
+        </button>
+
+        <!-- TABLA DE REGISTROS -->
+        <div class="tabla-contenedor">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>N Clic</th>
+                        <th>Hora</th>
+                    </tr>
+                </thead>
+
+                <tbody id="registros">
+                    <!-- JAVASCRIPT AGREGA LAS FILAS -->
+                </tbody>
+            </table>
+
+        </div>
+
+        <!-- MENSAJE VACÍO -->
+        <p id="mensaje-vacio" class="mensaje-vacio">
+            Todavía no hay clics registrados.
+        </p>
+
+    </main>
+
+</body>
+</html>
